@@ -361,11 +361,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('support', url='https://t.me/JOSPSupport'),
-                InlineKeyboardButton('channel', url='https://t.me/JosProjects')
+                InlineKeyboardButton('🎭 support Channel 🎭', url='https://t.me/@LMovies_HD'),
+                InlineKeyboardButton('💎 Updates Movies 💎', url='https://t.me/OfficialLMHD')
             ],
             [
-                InlineKeyboardButton('Series & Movie Club', url=f'https://t.me/+y53tWFUw6Q43NzE9')
+                InlineKeyboardButton('💎 Join Backup 💎', url=f'https://t.me/LMovies_HD')
             ]
             ]
             
@@ -434,17 +434,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Add me to your Chat', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add me to your Chat ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('help', callback_data='help'),
-            InlineKeyboardButton('about', callback_data='about')
+            InlineKeyboardButton('help ℹ️', callback_data='help'),
+            InlineKeyboardButton('about 🤨', callback_data='about')
             ],[
-            InlineKeyboardButton('search here movie', switch_inline_query_current_chat='')
+            InlineKeyboardButton('search ', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('movie club', url='https://t.me/+y53tWFUw6Q43NzE9')
+            InlineKeyboardButton('🎭 updates Channel 🎭', url='https://t.me/LMovies_HD'),
+            InlineKeyboardButton('💎 updates movie 💎', url='https://t.me/OfficialLMHD')
             ],[
-            InlineKeyboardButton('✗ Close the Menu ✗', callback_data='close_data')
+            InlineKeyboardButton('Close', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
